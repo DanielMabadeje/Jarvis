@@ -40,13 +40,14 @@ def takeCommand():
         
     try:
         print("Recognizing")
-        query  = r.recognize_google(audio language='en-in')
+        query  = r.recognize_google(audio, language='en-in')
         print(query)
         
         
     except exception as e:
         print(e)
+        speak("Say that again please")
         
     return query
 
-take()
+takeCommand()
