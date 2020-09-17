@@ -17,7 +17,7 @@ def time():
 
 def date():
     year = int(datetime.datetime.now().year)
-    month = int(datetime.datetime.now().month)
+    month = int(datetime.datetime.now().month) 
     date = int(datetime.datetime.now().day)
     
     speak(date)
